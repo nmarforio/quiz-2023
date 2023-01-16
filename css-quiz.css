@@ -22,16 +22,28 @@ body {
 .answer {
   padding: 40px;
 }
-button:hover {
+.button:hover {
   background-color: #724cac; /* Green */
   color: white;
 }
-button {
+.button {
   background-color: white;
   color: black;
   border: 2px solid #6336b6;
   padding: 32px 16px;
   border-radius: 5px;
+}
+
+.bookmark {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 20px 15px;
+  background-color: lavender;
+  border: 1px solid black;
+}
+.bookmark:focus {
+  background-color: black;
 }
 
 footer {
@@ -44,9 +56,7 @@ footer {
   border-radius: 5px;
   border: 1px solid black;
 }
-.bookmark {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: ;
+
+.tags {
+  display: flex;
 }
