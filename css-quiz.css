@@ -3,7 +3,7 @@ body {
 }
 
 .quiz {
-  background-color: cornflowerblue;
+  background-color: rgb(182, 165, 240);
   text-align: center;
   padding: 15px;
   border-radius: 15px;
@@ -75,6 +75,7 @@ footer {
 .tags {
   margin: 10px;
 }
-a#thumbsup {
+a {
   font-size: x-large;
+  text-decoration: none;
 }
