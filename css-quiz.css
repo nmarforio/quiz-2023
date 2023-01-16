@@ -8,6 +8,7 @@ body {
   padding: 15px;
   border-radius: 15px;
 }
+
 .cards {
   margin: 15px;
   background-color: lavender;
@@ -19,13 +20,16 @@ body {
   border-style: double;
   position: relative;
 }
+
 .answer {
   padding: 40px;
 }
+
 .button:hover {
   background-color: #724cac; /* Green */
   color: white;
 }
+
 .button {
   background-color: white;
   color: black;
@@ -36,12 +40,15 @@ body {
 
 .bookmark {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  padding: 20px 15px;
+  top: 2px;
+  right: 2px;
+  padding: 10px 10px;
   background-color: lavender;
-  border: 1px solid black;
+  border-radius: 50%;
+  border: none;
+  font-size: xx-large;
 }
+
 .bookmark:focus {
   background-color: black;
 }
@@ -50,6 +57,7 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+
 .pages {
   background-color: lavender;
   padding: 5px;
@@ -58,5 +66,5 @@ footer {
 }
 
 .tags {
-  display: flex;
+  margin: 10px;
 }
