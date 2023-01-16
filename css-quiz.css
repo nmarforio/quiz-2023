@@ -53,9 +53,15 @@ body {
   background-color: black;
 }
 
+a:hover {
+  background-color: black;
+  color: white;
+}
 footer {
   display: flex;
   justify-content: space-around;
+  position: sticky;
+  bottom: 0;
 }
 
 .pages {
@@ -63,8 +69,12 @@ footer {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid black;
+  color: black;
 }
 
 .tags {
   margin: 10px;
+}
+a#thumbsup {
+  font-size: x-large;
 }
