@@ -17,6 +17,7 @@ body {
   border-color: black;
   border: 5px;
   border-style: double;
+  position: relative;
 }
 .answer {
   padding: 40px;
@@ -36,4 +37,16 @@ button {
 footer {
   display: flex;
   justify-content: space-around;
+}
+.pages {
+  background-color: lavender;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.bookmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: ;
 }
