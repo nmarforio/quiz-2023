@@ -60,7 +60,6 @@ a:hover {
 footer {
   display: flex;
   justify-content: space-around;
-  position: sticky;
   bottom: 0;
 }
 
