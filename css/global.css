@@ -23,6 +23,14 @@ footer {
   bottom: 0;
 }
 
+footer.pages {
+  background-color: lavender;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+}
+
 footer a:hover {
   background-color: black;
   color: white;
@@ -31,4 +39,17 @@ footer a:hover {
 footer a {
   font-size: x-large;
   text-decoration: none;
+}
+
+a {
+  font-size: x-large;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+.bookmark:focus {
+  background-color: black;
 }
