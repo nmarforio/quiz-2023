@@ -34,14 +34,17 @@ inputAnswer.addEventListener("input", (event) => {
 });
 
 function newCard(newdata) {
+  //Create the new Card
   const newDiv = document.createElement("div");
   newDiv.classList.add("cards");
   document.body.append(newDiv);
 
+  //Create the Question
   const newInputQuestion = document.createElement("h2");
   newDiv.append(newInputQuestion);
   newInputQuestion.textContent = newdata.newquestion;
 
+  //Create the Answer
   const newDivAnswer = document.createElement("div");
   newDivAnswer.classList.add("answer");
   newDiv.append(newDivAnswer);
@@ -56,16 +59,29 @@ function newCard(newdata) {
   newAnswerP.classList.add("hiddenAnswer");
   newAnswerP.textContent = newdata.youranswer;
 
+  //create new tag
   const newTag = document.createElement("button");
   newDiv.append(newTag);
   newTag.classList.add("tags");
   newTag.textContent = `#${newdata.tags}`;
 
+  // create new Bookmark
+  const bookmark = document.createElement("button");
+  newDiv.append(bookmark);
+  bookmark.classList.add("bookmark");
+  bookmark.textContent = "👍";
+
+  // function and eventlistener
   function answer() {
     newAnswerP.setAttribute("hidden", "");
   }
 
   answer();
+  bookmark.addEventListener("click", () => {
+    bookmark.classList.remove("bookmark");
+    bookmark.classList.add("bookmark");
+    bookmark.classList.toggle("bookmarkdark");
+  });
 
   newButtonAnswer.addEventListener("click", () => {
     newAnswerP.toggleAttribute("hidden");
@@ -80,6 +96,8 @@ function newCard(newdata) {
     }
   });
 }
+
+// {/* <button aria-label="bookmark" class="bookmark">👍</button> */}
 
 // {/* <button class="tags">#git</button>
 //       <button class="tags">#terminal</button>
