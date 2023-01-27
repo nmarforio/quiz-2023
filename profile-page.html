@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile-site</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script script src="./index.js" defer></script>
   </head>
-  <body>
-    <h1 class="quiz">QUIZ APP</h1>
+  <body data-js="body">
+    <h1 class="quiz" data-js="quiz">QUIZ APP</h1>
     <img
       src="https://pic.onlinewebfonts.com/svg/img_87237.png"
       alt="profile-pic"
     />
     <h2>About me:</h2>
-    <p>---------------------</p>
-    <button class="profile">Setting</button>
-    <button class="profile">Dark Mode</button>
+    <div class="metext">
+      <p class="text">
+        I'm Nicole, I love cooking and this Quiz App is about food and you can
+        create some question too. Have Fun!
+      </p>
+    </div>
+    <button class="profile" data-js="darkmode">🌚</button>
+    <button class="profile">⚙️</button>
+
     <footer>
-      <a href="./index.html" class="pages">Quiz</a>
-      <a href="./bookmark.html" aria-label="bookmark" class="pages">👍</a>
-      <a href="./form.html" class="pages">➕</a>
-      <a href="./profile-page.html" class="pages">Profile</a>
+      <a href="./index.html" class="pages" data-js="pages">Quiz</a>
+      <a
+        href="./bookmark.html"
+        aria-label="bookmark"
+        class="pages"
+        data-js="pages"
+        >👍</a
+      >
+      <a href="./form.html" class="pages" data-js="pages">➕</a>
+      <a href="./profile-page.html" class="pages" data-js="pages">Profile</a>
     </footer>
   </body>
 </html>
