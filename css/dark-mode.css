@@ -56,3 +56,6 @@ body.dark {
   color: white;
   border-radius: 5px;
 }
+.profile.dark {
+  background-color: rgb(140, 140, 158);
+}

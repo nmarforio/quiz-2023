@@ -3,13 +3,19 @@ const bodyElement = document.querySelector('[data-js="body"]');
 const quizElement = document.querySelector('[data-js="quiz]');
 const footerElement = document.querySelector('[data-js="pages"]');
 const cardElement = document.querySelector('[data-js="cards"]');
-const tagElement = document.querySelector('[data-js="tag"]');
-const bookmarkElement = document.querySelector('[data-js="bookmarkjs"]');
-const buttonElement = document.querySelector('[data-js="buttonanswer]');
+const settingButton = document.querySelector('[data-js="setting"]');
 
 dark.addEventListener("click", () => {
   bodyElement.classList.toggle("dark");
   quizElement.classList.toggle("dark");
   footerElement.classList.toggle("dark");
   cardElement.classList.toggle("dark");
+  settingButton.classList.toggle("dark");
+  dark.classList.toggle("dark");
+
+  if (dark.textContent === "🌚") {
+    dark.textContent = "🌝";
+  } else {
+    dark.textContent = "🌚";
+  }
 });
