@@ -6,9 +6,12 @@ body.dark {
 
 .quiz.dark {
   background-color: rgb(140, 140, 158);
-  text-align: center;
-  padding: 15px;
-  border-radius: 15px;
+  color: white;
+}
+img.dark {
+  margin-bottom: 50px;
+  width: 50%;
+  color: rgb(140, 140, 158);
 }
 
 .cards.dark {
@@ -47,7 +50,7 @@ body.dark {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid black;
-  color: black;
+  color: white;
 }
 
 .tags.dark {
