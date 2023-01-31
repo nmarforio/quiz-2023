@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz-app</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./form.js" defer></script>
+  </head>
+  <body>
+    <form data-js="form">
+      <h1 class="quiz">QUIZ APP</h1>
+      <div class="cards">
+        <h2 id="question1">Create your question</h2>
+        <div class="answer">
+          <label for="newquestion">Your own question</label>
+          <textarea
+            data-js="inputquestion"
+            type="text"
+            name="newquestion"
+            id="newquestion"
+            class="inputcard"
+            maxlength="150"
+            placeholder="do you like fish?"
+          ></textarea>
+          <p data-js="charactersquestion" class="length">150 Characters left</p>
+          <label for="youranswer">Here your answer</label>
+          <textarea
+            data-js="inputanswer"
+            type="text"
+            name="youranswer"
+            id="youranswer"
+            placeholder="yes"
+            class="inputcard"
+            maxlength="150"
+          ></textarea>
+          <p data-js="charactersanswer" class="length">150 Characters left</p>
+          <label for="tags">Tags</label>
+          <input type="text" name="tags" id="tags" class="inputcard" />
+        </div>
+        <button type="submit" class="submit">Submit</button>
+      </div>
+    </form>
+    <footer>
+      <a href="./index.html" class="pages">Quiz</a>
+      <a href="./bookmark.html" aria-label="bookmark" class="pages">👍</a>
+      <a href="./form.html" class="pages">➕</a>
+      <a href="./profile-page.html" class="pages">Profile</a>
+    </footer>
+  </body>
+</html>

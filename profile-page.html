@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile-site</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./index.js" defer></script>
+    <script script src="./darkmode.js" defer></script>
   </head>
-  <body>
-    <h1 class="quiz">QUIZ APP</h1>
+  <body data-js="body">
+    <h1 class="quiz" data-js="quiz">QUIZ APP</h1>
     <img
+      data-js="imagine"
       src="https://pic.onlinewebfonts.com/svg/img_87237.png"
       alt="profile-pic"
     />
     <h2>About me:</h2>
-    <p>---------------------</p>
-    <button class="profile">Setting</button>
-    <button class="profile">Dark Mode</button>
-    <footer>
-      <a href="http://127.0.0.1:3000/index.html" class="pages">Quiz</a>
+    <div class="metext">
+      <p class="text">
+        I'm Nicole, I love cooking and this Quiz App is about food and you can
+        create some question too. Have Fun!
+      </p>
+    </div>
+    <button class="profile" data-js="darkmode">🌚</button>
+    <button class="profile" data-js="setting">🎛️</button>
+
+    <footer data-js="pages">
+      <a href="./index.html" class="pages">Quiz</a>
       <a
-        href="http://127.0.0.1:3000/bookmark.html"
+        href="./bookmark.html"
         aria-label="bookmark"
         class="pages"
+        data-js="pages"
         >👍</a
       >
-      <a href="http://127.0.0.1:3000/newcard.html" class="pages">➕</a>
-      <a href="http://127.0.0.1:3000/profile-page.html" class="pages"
-        >Profile</a
-      >
+      <a href="./form.html" class="pages">➕</a>
+      <a href="./profile-page.html" class="pages">Profile</a>
     </footer>
   </body>
 </html>

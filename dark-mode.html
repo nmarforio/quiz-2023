@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dark-mode-quiz</title>
-    <link rel="stylesheet" href="./css/dark-mode.css" />
+    <title>quiz-app</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./dark-mode.js" defer></script>
   </head>
   <body>
     <h1 class="quiz">QUIZ APP</h1>
     <div class="cards">
-      <h3 id="question1">HTML is the short name for?</h3>
+      <h2 id="question1">Which is the first gnocchi's ingredient?</h2>
       <div class="answer">
-        <button class="button">Show Answer</button>
+        <button class="button" data-js="buttonanswer">Show Answer</button>
+        <p class="hiddenAnswer" data-js="hiddenAnser">Potatoes</p>
       </div>
-      <button aria-label="bookmark" class="bookmark">👍</button>
+      <button aria-label="bookmark" class="bookmark" data-js="bookmarkjs">
+        👍
+      </button>
       <button class="tags">#html</button>
       <button class="tags">#webstructor</button>
       <button class="tags">#webstyle</button>
     </div>
     <div class="cards">
-      <h3 id="question2">
-        what is the first comand you need in Terminal to commit your work?
-      </h3>
+      <h2 id="question2">Bolognese is a meat sauce?</h2>
       <div class="answer">
         <button class="button">Show Answer</button>
+        <p class="hiddenAnswer" data-js="hiddenAnser">Yes</p>
       </div>
       <button aria-label="bookmark" class="bookmark">👍</button>
       <button class="tags">#git</button>
@@ -32,9 +35,10 @@
       <button class="tags">#commit</button>
     </div>
     <div class="cards">
-      <h3 id="question3">Which language are you using to style your pages?</h3>
+      <h2 id="question3">Nasi Champur is a dish from which country?</h2>
       <div class="answer">
         <button class="button">Show Answer</button>
+        <p class="hiddenAnswer" data-js="hiddenAnser">Indonesia</p>
       </div>
       <button aria-label="bookmark" class="bookmark">👍</button>
       <button class="tags">#css</button>
@@ -42,16 +46,10 @@
       <button class="tags">#html</button>
     </div>
     <footer>
-      <a href="http://127.0.0.1:3000/quiz-app.html" class="pages">Quiz</a>
-      <a
-        href="http://127.0.0.1:3000/bookmark.html"
-        aria-label="bookmark"
-        class="pages"
-        >👍</a
-      >
-      <a href="http://127.0.0.1:3000/profile-page.html" class="pages"
-        >Profile</a
-      >
+      <a href="./index.html" class="pages">Quiz</a>
+      <a href="./bookmark.html" aria-label="bookmark" class="pages">👍</a>
+      <a href="./form.html" class="pages">➕</a>
+      <a href="./profile-page.html" class="pages">Profile</a>
     </footer>
   </body>
 </html>

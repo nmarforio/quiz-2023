@@ -1,17 +1,20 @@
-body {
+body.dark {
   background-color: rgb(27, 45, 45);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(248, 244, 239);
 }
 
-.quiz {
+.quiz.dark {
   background-color: rgb(140, 140, 158);
-  text-align: center;
-  padding: 15px;
-  border-radius: 15px;
+  color: white;
+}
+img.dark {
+  margin-bottom: 50px;
+  width: 50%;
+  color: rgb(140, 140, 158);
 }
 
-.cards {
+.cards.dark {
   margin: 15px;
   background-color: rgb(140, 140, 158);
   padding: 40px;
@@ -23,16 +26,7 @@ body {
   position: relative;
 }
 
-.answer {
-  padding: 40px;
-}
-
-.button:hover {
-  background-color: #724cac; /* Green */
-  color: white;
-}
-
-.button {
+.button.dark {
   background-color: rgb(140, 140, 158);
   color: rgb(248, 244, 239);
   border: 2px solid #251443;
@@ -40,7 +34,7 @@ body {
   border-radius: 5px;
 }
 
-.bookmark {
+.bookmark.dark {
   position: absolute;
   top: 2px;
   right: 2px;
@@ -51,36 +45,20 @@ body {
   font-size: xx-large;
 }
 
-.bookmark:focus {
-  background-color: black;
-}
-
-a:hover {
-  background-color: black;
-  color: white;
-}
-footer {
-  display: flex;
-  justify-content: space-around;
-  position: sticky;
-  bottom: 0;
-}
-
-.pages {
+.pages.dark {
   background-color: rgb(140, 140, 158);
   padding: 5px;
   border-radius: 5px;
   border: 1px solid black;
-  color: black;
+  color: white;
 }
 
-.tags {
+.tags.dark {
   margin: 10px;
   background-color: black;
   color: white;
   border-radius: 5px;
 }
-a {
-  font-size: x-large;
-  text-decoration: none;
+.profile.dark {
+  background-color: rgb(140, 140, 158);
 }

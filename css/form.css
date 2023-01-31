@@ -1,0 +1,17 @@
+.inputcard {
+  margin-top: 6px;
+}
+.answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.submit {
+}
+
+.length {
+  margin-top: 0;
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: right;
+}
